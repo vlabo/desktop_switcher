@@ -1,0 +1,19 @@
+[package]
+name = "d_switch"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+winvd = "0.0.48"
+
+# Minimal Win32 API surface for: tray icon, message loop, global hotkeys.
+windows = { version = "0.58", features = [
+  "Win32_Graphics_Gdi",
+  "Win32_Foundation",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_System_Com",
+  "Win32_System_Diagnostics_Debug",
+  "Win32_System_LibraryLoader",
+  "Win32_UI_Shell",
+  "Win32_UI_WindowsAndMessaging",
+] }
